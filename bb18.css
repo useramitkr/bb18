@@ -1,0 +1,158 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-image: url(./bb18.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.header-part {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-cont {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.contestent {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0;
+}
+.contestent img {
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.contestent button {
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result-part {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-area {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
+.result-image h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.result-image img {
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.result-btn button {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #F8CCB2;
+    padding: 50px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result-btn button:hover {
+    background-color: green;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.add-btn.add {
+    background-color: #F8CCB2; 
+}
+
+.add-btn.remove {
+    background-color: green;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header-part {
+        height: 30%;
+    }
+
+    .contestent {
+        width: 65px;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .contestent img {
+        width: 60px;
+        height: 100px;
+    }
+
+    .result-part {
+        height: 70%;
+    }
+
+    .result-area {
+        flex-direction: column;
+        gap: 20%;
+    }
+
+    .result-image img {
+        width: 150px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .result-image h2 {
+        font-size: 20px;
+    }
+
+    .result-btn button {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+}
